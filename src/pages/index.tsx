@@ -1,9 +1,17 @@
 import { useTranslations } from 'next-intl';
+import Header from '@/components/layouts/Header';
+import Footer from '@/components/layouts/Footer';
 
 export default function Home() {
 	const t = useTranslations('Hello');
 
-	return <>{t('message')}</>;
+	return (
+		<div className="flex flex-col w-full min-h-screen">
+			<Header />
+			<div className="container flex-auto bg-sky-blue">{t('message')}</div>
+			<Footer />
+		</div>
+	);
 }
 
 export async function getStaticProps(context: { locale: any }) {
