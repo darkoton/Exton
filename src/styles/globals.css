@@ -1,0 +1,335 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* H1 MAIN */
+	.text-1440-H1-main {
+		font-weight: 300;
+		font-size: 88px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H1-main {
+		font-weight: 300;
+		font-size: 62px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H1-main {
+		font-weight: 300;
+		font-size: 39px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H1 */
+	.text-1440-H1 {
+		font-weight: 300;
+		font-size: 72px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H1 {
+		font-weight: 300;
+		font-size: 51px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H1 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H2-1 */
+	.text-1440-H2-1 {
+		font-weight: 300;
+		font-size: 60px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H2-1 {
+		font-weight: 300;
+		font-size: 44px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H2-1 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H2-2 */
+	.text-1440-H2-2 {
+		font-weight: 300;
+		font-size: 50px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H2-2 {
+		font-weight: 300;
+		font-size: 50px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H2-2 {
+		font-weight: 300;
+		font-size: 50px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H2-3 */
+	.text-1440-H2-3 {
+		font-weight: 300;
+		font-size: 40px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H2-3 {
+		font-weight: 300;
+		font-size: 40px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H2-3 {
+		font-weight: 300;
+		font-size: 40px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H2-3 */
+	.text-1440-H2-4 {
+		font-weight: 300;
+		font-size: 48px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H2-4 {
+		font-weight: 300;
+		font-size: 48px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H2-4 {
+		font-weight: 300;
+		font-size: 48px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* H3 */
+	.text-1440-H3 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-H3 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-H3 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* P1 */
+	.text-1440-P1 {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P1 {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P1 {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* P2 */
+	.text-1440-P2 {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P2 {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P2 {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* P3 */
+	.text-1440-P3 {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P3 {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P3 {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* P4 */
+	.text-1440-P4 {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P4 {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P4 {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* P5 */
+	.text-1440-P5 {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P5 {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P5 {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* P6 */
+	.text-1440-P6 {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-768-P6 {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+	.text-360-P6 {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: auto;
+		letter-spacing: 0.01em;
+	}
+
+	/* B1 */
+	.text-1440-B1 {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-B1 {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-B1 {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	/* B2 */
+	.text-1440-B2 {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+
+	.text-768-B2 {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+	.text-360-B2 {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: auto;
+		letter-spacing: 0em;
+	}
+}
+@layer components {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+		padding: 0 15px;
+	}
+	@media (max-width: 768px) {
+		.container {
+			max-width: 750px;
+			padding: 0 15px;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.container {
+			max-width: 360px;
+			padding: 0 15px;
+		}
+	}
+}
