@@ -1,26 +1,33 @@
-import { useTranslations } from 'next-intl';
-import Header from '@/components/layouts/Header';
-import Footer from '@/components/layouts/Footer';
+import { useTranslation } from 'next-i18next';
+import Header from '@components/layouts/Header';
+import Footer from '@components/layouts/Footer';
+import classNames from 'classnames';
+import { Geologica } from 'next/font/google';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+
+const geologica = Geologica({
+	subsets: ['latin'],
+});
 
 export default function Home() {
-	const t = useTranslations('Hello');
+	const { t } = useTranslation('common');
 
 	return (
-		<div className="flex flex-col w-full min-h-screen">
+		<div className={classNames('flex flex-col w-full min-h-screen', geologica.className)}>
 			<Header />
-			<div className="container flex-auto bg-sky-blue">{t('message')}</div>
+			<div className="container flex-auto bg-sky-blue">{t('Hello world!')}</div>
 			<Footer />
 		</div>
 	);
 }
 
-export async function getStaticProps(context: { locale: any }) {
-	return {
-		props: {
-			// You can get the messages from anywhere you like. The recommended
-			// pattern is to put them in JSON files separated by locale and read
-			// the desired one based on the `locale` received from Next.js.
-			messages: (await import(`../locale/${context.locale}.json`)).default,
-		},
-	};
-}
+type Props = {
+	// Add custom props here
+};
+
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale ?? 'en')),
+	},
+});
