@@ -11,12 +11,12 @@ const geologica = Geologica({
 });
 
 export default function Home() {
-	const { t } = useTranslation('common');
+	const { t, i18n } = useTranslation('common');
 
 	return (
 		<div className={classNames('flex flex-col w-full min-h-screen', geologica.className)}>
 			<Header />
-			<div className="container flex-auto bg-sky-blue">{t('Hello world!')}</div>
+			<div className="container flex-auto bg-sky-blue">{t('hello')}</div>
 			<Footer />
 		</div>
 	);
