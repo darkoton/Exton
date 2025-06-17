@@ -337,3 +337,13 @@
 		}
 	}
 }
+
+@layer utilities {
+	.title-gradient {
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@apply bg-white-purple-gradient;
+	}
+}

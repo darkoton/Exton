@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
+import { Button } from '@components/UI';
 
 const Header = () => {
 	const { i18n } = useTranslation();
@@ -16,8 +17,8 @@ const Header = () => {
 
 	return (
 		<header className="container bg-green text-purple flex justify-between">
-			Header
-			<button onClick={() => onToggleLanguageClick(changeTo)}>{changeTo}</button>
+			<span>Header</span>
+			<Button onClick={() => onToggleLanguageClick(changeTo)}>{changeTo}</Button>
 		</header>
 	);
 };
