@@ -1,7 +1,12 @@
-import { Head as HeadNext } from 'next/document';
+import HeadNext from 'next/head';
 
 const Head = () => {
-	return <HeadNext />;
+  return (
+    <HeadNext>
+      <title>Exton</title>
+      <meta name="description" content="exton" />
+    </HeadNext>
+  );
 };
 
 export default Head;
