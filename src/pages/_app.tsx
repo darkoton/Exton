@@ -1,6 +1,7 @@
 import React from 'react';
-import type { AppProps } from 'next/app';
+
 import { appWithTranslation } from 'next-i18next';
+import { selectLayout } from '@layouts/index';
 
 import '@styles/normalize.css';
 import '@styles/vars.css';
@@ -10,8 +11,7 @@ import '@styles/tailwind.css';
 import { type AppPropsWithLayout } from '@interfaces/layouts.type';
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
-  const getLayout = Component.getLayout ?? ((page: React.ReactNode) => page);
-
+  const getLayout = Component.getLayout ?? selectLayout('default');
   return getLayout(<Component {...pageProps} />);
 }
 

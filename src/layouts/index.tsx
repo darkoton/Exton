@@ -7,8 +7,8 @@ import TestLayout from './TestLayout';
 export { MainLayout, TestLayout };
 
 const layouts: Record<string, LayoutItem> = {
-  main: {
-    name: 'main',
+  default: {
+    name: 'default',
     component: MainLayout,
   },
   test: {
@@ -27,6 +27,6 @@ export function selectLayout(name: string) {
   if (Layout) {
     return getLayout;
   } else {
-    return <>Layout not found</>;
+    return () => <>Layout not found</>;
   }
 }
