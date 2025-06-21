@@ -2,18 +2,13 @@ import { ReactElement, ComponentType, ReactNode } from 'react';
 import type { LayoutItem } from './layouts.types';
 
 import MainLayout from './MainLayout';
-import TestLayout from './TestLayout';
 
-export { MainLayout, TestLayout };
+export { MainLayout };
 
 const layouts: Record<string, LayoutItem> = {
   default: {
     name: 'default',
     component: MainLayout,
-  },
-  test: {
-    name: 'test',
-    component: TestLayout,
   },
 };
 

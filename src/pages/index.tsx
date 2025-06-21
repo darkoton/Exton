@@ -1,15 +1,14 @@
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { GetStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 
-export default function Home() {
-  const { t } = useTranslation('common');
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    redirect: {
+      destination: '/home',
+      permanent: true, // 301 если true, 307 если false
+    },
+  };
+};
 
-  return <>{t('hello')}</>;
+export default function Empty() {
+  return <></>;
 }
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? 'en')),
-  },
-});
