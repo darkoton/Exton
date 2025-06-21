@@ -1,15 +1,10 @@
 import type { NextConfig } from "next";
-import i18n from './next-i18next.config'
-
-export { i18n }
+import { i18n } from './next-i18next.config'
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  i18n: {
-    locales: ['en', 'ru'],
-    defaultLocale: 'en',
-  },
+  i18n
 };
 
 export default nextConfig;

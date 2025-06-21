@@ -1,15 +1,23 @@
 // @ts-check
+/**
+ * @type {import('next-i18next').UserConfig['i18n']}
+ */
+const i18n = {
+  defaultLocale: 'en',
+  locales: ['en', 'ru'],
+  localeDetection: false,
+}
+
+module.exports = { i18n }
 
 /**
  * @type {import('next-i18next').UserConfig}
  */
-module.exports = {
+const config = {
   // https://www.i18next.com/overview/configuration-options#logging
-  debug: process.env.NODE_ENV === 'development',
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ru'],
-  },
+  // debug: process.env.NODE_ENV === 'development',
+  i18n,
+
   /** To avoid issues when deploying to some paas (vercel...) */
   localePath:
     typeof window === 'undefined'
@@ -26,3 +34,5 @@ module.exports = {
   // serializeConfig: false,
   // react: { useSuspense: false }
 }
+
+module.exports = config
